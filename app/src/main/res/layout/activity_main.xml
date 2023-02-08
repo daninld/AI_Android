@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/bgimage"
+        android:layout_width="415dp"
+        android:layout_height="340dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/button4"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/cameraimage"
+        android:layout_width="412dp"
+        android:layout_height="341dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/coding_pictures"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/detect"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/nanumsquareneorg"
+        android:text="@string/detect"
+        android:textColor="#2B6103"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload2"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button3"
+        android:elevation="30dp"
+        android:fontFamily="@font/nanumsquareneorg"
+        android:gravity="center"
+        android:text="@string/upload2"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/upload"
+        android:layout_width="152dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button2"
+        android:elevation="30dp"
+        android:fontFamily="@font/nanumsquareneorg"
+        android:gravity="center"
+        android:text="@string/upload"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/photo"
+        android:layout_width="103dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button1"
+        android:fontFamily="@font/nanumsquareneorg"
+        android:onClick="onResultbtnClicked"
+        android:text="@string/result"
+        android:textColor="#2B6103"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

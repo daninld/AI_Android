@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ai_plus</string>
+    <string name="upload">사진 촬영</string>
+    <string name="upload2">갤러리 선택</string>
+    <string name="detect">detect</string>
+    <string name="result">result</string>
+</resources>
